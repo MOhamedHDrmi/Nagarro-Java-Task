@@ -2,6 +2,7 @@ package com.nagarro.javatest.security;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
@@ -23,5 +24,12 @@ public class StoredToken {
 
     public boolean checkExistsUser(String key) {
 		return usersTokens.containsKey(key);
+    }
+    public void removeTokenByValue(String jwt) {
+        for(Map.Entry<String, String> entry : usersTokens.entrySet()){
+            if(entry.getValue().equals(jwt)) {
+                usersTokens.remove(entry.getKey());
+            }
+        }
     }
 }
