@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Nagarro Java Task</title>
+    <link href="common/css/style.css" rel="stylesheet">
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <script src="common/js/jquery.min.js"></script>
+    <script src="common/js/login.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card px-5 py-5" id="form1">
+                <div class="form-data" v-if="!submitted">
+                    <div id="failureMessage" style="margin-bottom: 50px;width: fit-content;"></div>
+                    <div class="forms-inputs mb-4">
+                        <span>Username</span>
+                        <input id="username" autocomplete="off" type="text">
+                    </div>
+                    <div class="forms-inputs mb-4">
+                        <span>Password</span>
+                        <input id="password" autocomplete="off" type="password">
+                    </div>
+                    <div class="mb-3">
+                        <button id="loginButton" type="submit" class="btn btn-dark w-100">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
