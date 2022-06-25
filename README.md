@@ -3,11 +3,11 @@ Account Statements
 
 # Technologies
 * **Back-End**
- 
+
    Spring Boot (Security 'JWT authentication' - JPA - test)
 * **Front-End**
-  1. jQuery
-  2. Html
+* 
+  HTML, CSS, Bootstrap and jQuery.
 
 
 ## Application Notes
@@ -20,7 +20,7 @@ Account Statements
  3. import application to the IDE, and download dependencies.
  4. update application.properties
     * *datasource.url* this property should have the path of MS access file
-    * *logging.file.name* thi property should have loggin path and log file name.
+    * *logging.file.name* this property should have loggin path and log file name.
  5. run the applictaion
  6. start working with rest APIs
 
